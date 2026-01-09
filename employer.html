@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employer Dashboard</title>
+  <link rel="stylesheet" href="css/employer.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="card">
+      <h2>Employer Profile</h2>
+
+      <div id="profileView">
+      <div class="id-box" id="EmployerId"></div>
+
+      <div class="field"><span>Work City:</span> <span id="workCity"></span></div>
+      <div class="field"><span>Work Type:</span> <span id="workType"></span></div>
+
+      <div class="actions">
+        <button onclick="goToEdit()">Edit Profile</button>
+        <button class="secondary" onclick="logout()">Logout</button>
+      </div>
+      </div>
+
+      <hr />
+
+
+      <h3>Search Worker</h3>
+
+      <input id="searchId" placeholder="Enter Worker ID (WKR-XXXXXX)" />
+      <button onclick="searchWorker()">Search</button>
+
+      <div id="searchResult" class="result-card"></div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/employer.js"></script>
+</body>
+</html>

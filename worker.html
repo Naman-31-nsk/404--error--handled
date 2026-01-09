@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Worker Profile</title>
+  <link rel="stylesheet" href="css/worker.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="card">
+      <h2>My Profile</h2>
+
+      <div class="id-box" id="workerId"></div>
+
+      <div class="field"><span>Name:</span> <span id="name"></span></div>
+      <div class="field"><span>Origin State:</span> <span id="originState"></span></div>
+      <div class="field"><span>Current City:</span> <span id="currentCity"></span></div>
+      <div class="field"><span>Work Type:</span> <span id="workType"></span></div>
+      <div class="field"><span>Age:</span> <span id="age"></span></div>
+      <div class="field"><span>Language:</span> <span id="language"></span></div>
+
+      <div class="actions">
+        <button onclick="goToEdit()">Edit Profile</button>
+        <button class="secondary" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/worker.js"></script>
+</body>
+</html>

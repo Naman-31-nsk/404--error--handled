@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Employer Profile</title>
+  <link rel="stylesheet" href="css/employer.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="card">
+      <h2>Employer Details</h2>
+
+      <form onsubmit="saveProfile(event)">
+        <input id="workCity" placeholder="Work City" />
+        <input id="workType" placeholder="Type of Work" />
+
+        <button type="submit">Save Profile</button>
+      </form>
+
+      <p id="msg"></p>
+    </div>
+  </div>
+
+  <script src="js/employer.js"></script>
+</body>
+</html>

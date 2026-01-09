@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <div class="auth-card">
+    <h2>Login</h2>
+
+    <input id="email" type="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+
+    <select id="role">
+      <option value="WORKER">Worker</option>
+      <option value="EMPLOYER">Employer</option>
+    </select>
+
+    <button onclick="login()">Login</button>
+
+    <p id="msg"></p>
+
+    <div class="auth-link">
+      Don’t have an account?
+      <a href="signup.html">Sign up</a>
+    </div>
+  </div>
+
+   <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <!-- App scripts -->
+  <script src="js/firebase.js"></script>
+  <script src="js/auth.js"></script>
+
+</body>
+</html>

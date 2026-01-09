@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="css/worker.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="card">
+      <h2>Worker Profile Details</h2>
+
+      <form onsubmit="saveProfile(event)">
+        <input id="name" placeholder="Full Name" />
+        <input id="originState" placeholder="Origin State" />
+        <input id="currentCity" placeholder="Current City" />
+        <input id="workType" placeholder="Type of Work" />
+        <input id="age" type="number" placeholder="Age" />
+        <input id="language" placeholder="Language" />
+        <input id="domicile" placeholder="Domicile Reference Number" />
+
+        <button type="submit">Save Profile</button>
+      </form>
+
+      <p id="msg"></p>
+    </div>
+  </div>
+
+  <script src="js/worker.js"></script>
+</body>
+</html>
